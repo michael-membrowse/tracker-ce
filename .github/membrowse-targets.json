@@ -1,0 +1,32 @@
+[
+  {
+    "target_name": "tracker-original",
+    "setup_cmd": "T=\"$HOME/arm-gnu-10.3\"; if [ ! -x \"$T/bin/arm-none-eabi-gcc\" ]; then sudo apt-get update && sudo apt-get install -y wget bzip2 make && wget -q https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 -O /tmp/agt.tar.bz2 && mkdir -p \"$T\" && tar -xjf /tmp/agt.tar.bz2 -C \"$T\" --strip-components=1 && rm /tmp/agt.tar.bz2; fi && echo \"$T/bin\" >> \"$GITHUB_PATH\"",
+    "build_cmd": "make original",
+    "elf": "platforms/mk66/build/PolyendTracker.axf",
+    "ld": "platforms/mk66/3rdparty/teensy_core/mk66fx1m0.ld",
+    "map_file": "",
+    "linker_vars": "",
+    "skip_sections": ""
+  },
+  {
+    "target_name": "tracker-plus",
+    "setup_cmd": "T=\"$HOME/arm-gnu-10.3\"; if [ ! -x \"$T/bin/arm-none-eabi-gcc\" ]; then sudo apt-get update && sudo apt-get install -y wget bzip2 make && wget -q https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 -O /tmp/agt.tar.bz2 && mkdir -p \"$T\" && tar -xjf /tmp/agt.tar.bz2 -C \"$T\" --strip-components=1 && rm /tmp/agt.tar.bz2; fi && echo \"$T/bin\" >> \"$GITHUB_PATH\"",
+    "build_cmd": "make plus",
+    "elf": "platforms/imx/build-PLUS/TrackerPlus.axf",
+    "ld": "platforms/imx/linker/TrackerPlus/memory.ld",
+    "map_file": "",
+    "linker_vars": "",
+    "skip_sections": ""
+  },
+  {
+    "target_name": "tracker-mini",
+    "setup_cmd": "T=\"$HOME/arm-gnu-10.3\"; if [ ! -x \"$T/bin/arm-none-eabi-gcc\" ]; then sudo apt-get update && sudo apt-get install -y wget bzip2 make && wget -q https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 -O /tmp/agt.tar.bz2 && mkdir -p \"$T\" && tar -xjf /tmp/agt.tar.bz2 -C \"$T\" --strip-components=1 && rm /tmp/agt.tar.bz2; fi && echo \"$T/bin\" >> \"$GITHUB_PATH\"",
+    "build_cmd": "make mini",
+    "elf": "platforms/imx/build-MINI/TrackerMini.axf",
+    "ld": "platforms/imx/linker/TrackerMini/memory.ld",
+    "map_file": "",
+    "linker_vars": "",
+    "skip_sections": ""
+  }
+]

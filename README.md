@@ -1,5 +1,7 @@
 # Polyend Tracker Community Edition (CE)
 
+[![MemBrowse](https://membrowse.com/badge.svg)](https://membrowse.com/public/polyend/tracker-ce)
+
 Welcome to the **Polyend Tracker Community Edition** repository!
 
 Built directly from the original Polyend firmware source code, Tracker CE opens up the Polyend Tracker platform to musicians, sound designers, and developers around the world. Whether you are here to flash the latest Community Edition firmware, want to build your own idea on the Tracker, design custom themes and fonts, write Sample Editor plugins, or build new synthesizer engines, we are excited to have you here.
